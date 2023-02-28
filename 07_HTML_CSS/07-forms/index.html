@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+    <body>
+        <h1>HTML5 - forme</h1>
+        <form action="" method="POST">
+            <!-- hidden element -->
+            <input type="hidden" name="product-code" value="P1234" />
+            <h2>Input type: text, password and textarea</h2>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="username"/>
+            <br />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <label for="bio">Bio:</label>
+            <br />
+            <textarea name="bio" id="bio" cols="20" rows="4" placeholder="Your bio here....">
+            </textarea>
+            
+            <h2>Radio button</h2>
+            <fieldset>
+                <legend>Choose payment method:</legend>
+                <input type="radio" name="payment" id="visa" value="visa" checked="checked"/>
+                <label for="visa">Visa</label>
+                <br />
+                <input type="radio" name="payment" id="mastercard" value="mastercard" />
+                <label for="mastercard">Mastercard</label>
+                <br />
+                <input type="radio" name="payment" id="paypal" value="paypal"/>
+                <label for="paypal">Paypal</label>
+            </fieldset>
+
+            <h2>Checkbox</h2>
+            <fieldset>
+                <legend>Favrite music platform</legend>
+                <input type="checkbox" id="spotify" name="musicplatform" value="spotify" checked="checked" />
+                <label for="spotify">Spotify</label>
+                <br />
+                <input type="checkbox" id="deezer" name="musicplatform" value="deezer" />
+                <label for="deezer">Deezer</label>
+                <br />
+                <input type="checkbox" id="youtube" name="musicplatform" value="youtube" />
+                <label for="youtube">Youtube</label>
+            </fieldset>
+
+            <h2>Select - option (drop down lists)</h2>
+            <label for="month">Month</label>
+            <br />
+            <select name="month" id="month">
+                <option value="jan">Januar</option>
+                <option value="feb">Februar</option>
+                <option value="mar">Mart</option>
+                <option value="apr">April</option>
+                <option value="maj">Maj</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="avg">Avgust</option>
+                <option value="sept">Septembar</option>
+                <option value="okt">Oktobar</option>
+                <option value="nov">Novembar</option>
+                <option value="dec">Decembar</option>
+            </select>
+            
+            <h2>Upload file form controls</h2>
+            <label for="file">Upload Photo</label>
+            <input type="file" name="file" id="file" />
+            <br />
+            <br />
+            <label for="photo">Upload Photo</label>
+            <input type="file" name="photo" id="photo" accept="image/png, image/jpeg" multiple />
+
+            <h2>HTML specific form elements</h2>
+            <h4>Email:</h4>
+            <label for="user-email">Your email address:</label>
+            <input type="email" name="user-email" id="user-email" placeholder="youremail@mail.com" />
+            <h4>Date:</h4>
+            <input type="date" />
+
+            <h4>URL</h4>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url" placeholder="http://domain.com" />
+
+            <h4>Search</h4>
+            <input type="search" name="search" placeholder="search anything" />
+            <br />
+            <hr />
+            <h2>Form controlos for submit or reset forms</h2>
+            <!-- pored input type="submit" 
+                 mozete da koristite i button element   
+            -->
+            <!-- <input type="submit" value="Send" /> -->
+            <button type="submit">
+                <img src="img/plus.png" alt="Add" width="16" />Send
+            </button>
+            <button type="reset" value="Clear">Clear form</button>
+        </form>
+    </body>
+</html>
